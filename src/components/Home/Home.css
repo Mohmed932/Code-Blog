@@ -1,0 +1,73 @@
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.main-Home{
+    width: 30vw;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 20px;
+    overflow: hidden;
+}
+.main-Home img{
+    width: 100%;
+    transition: .5s;
+    display: ruby;
+}
+.main-Home img:hover{
+    filter: brightness(.6);
+}
+.main-title{
+    margin-left: 27px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.main-Home button {
+    width: fit-content;
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 24px;
+    outline: none;
+    border: none;
+}
+.main-DoorDashFavorite{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13vw;
+}
+.DoorDashFavorite{
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.NoPosts{
+    transform: translateY(280px);
+}
+@media (max-width:1000px) {
+    .main-Home{
+        width: 40vw;
+    }
+    .main-title{
+        font-size: 16px;
+    }
+}
+@media (max-width: 550px) {
+    .main-DoorDashFavorite{
+        margin-left:0;
+    }
+    .NoPosts{
+        font-size: 20px;
+    }
+    .main-Home{
+        width: 80vw;
+    }
+}
